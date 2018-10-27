@@ -9,4 +9,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'PagesController@home')->name('home');
+Route::get('/', 'PagesController@index')->name('index');
+Route::get('/home', 'HomeController@home')->name('home');
+
+Auth::routes();

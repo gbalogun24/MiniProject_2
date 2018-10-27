@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
-@include('includes.head')
+    @include('includes.head')
 <head>
 
 </head>
 <body>
 <header>
-
+    @include('includes.menu')
+    <br><br><br>
 </header>
 <main role="main">
     @yield('content')
