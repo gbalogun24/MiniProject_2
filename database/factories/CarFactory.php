@@ -20,6 +20,6 @@ $factory->define(App\Cars::class, function (Faker $faker) {
     return [
         'make'=>$randomMake,
         'model'=>$randomModel,
-        'year' => $faker->year()
+        'year' => $faker->year(),
     ];
 });
