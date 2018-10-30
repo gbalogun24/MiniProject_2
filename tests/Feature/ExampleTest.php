@@ -19,7 +19,13 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
         self::validate($response,$statement);
     }
-
+    public function testLoginExists()
+    {
+        $response = $this->get('/login');
+        $statement = "Login page found";
+        $response->assertStatus(200);
+        self::validate($response,$statement);
+    }
 
     function validate($response, $statement){
         if($response){
