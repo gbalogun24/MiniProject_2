@@ -12,10 +12,18 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testRegisterExists()
     {
-        $response = $this->get('/');
-
+        $response = $this->get('/register');
+        $statement = "Register page found";
         $response->assertStatus(200);
+        self::validate($response,$statement);
+    }
+
+
+    function validate($response, $statement){
+        if($response){
+            print $statement;
+        }
     }
 }
