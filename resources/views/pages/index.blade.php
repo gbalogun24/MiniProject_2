@@ -12,14 +12,14 @@
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h2>Contact</h2>
+                <p>You can use the button below or the link in the navigation bar to access this page </p>
+                <p><a class="btn btn-secondary" href="{{route('contact')}}" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <h2>About</h2>
+                <p>You can use the button below or the link in the navigation bar to access this page</p>
+                <p><a class="btn btn-secondary" href="{{route('about')}}" role="button">View details &raquo;</a></p>
             </div>
             <div class="col-md-4">
                 <h2>Heading</h2>
