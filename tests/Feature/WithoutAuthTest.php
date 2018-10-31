@@ -24,5 +24,13 @@ class WithoutAuthTest extends TestCase
         ExampleTest::validate($response,$statement);
     }
 
+    public function testContactExists()
+    {
+        $response = $this->get('/contact');
+        $statement = "Contact page found";
+        $response->assertStatus(200);
+        ExampleTest::validate($response,$statement);
+    }
+
     }
 
