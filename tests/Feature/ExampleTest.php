@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithoutMiddleware;
 
 class ExampleTest extends TestCase
 {
@@ -27,7 +28,7 @@ class ExampleTest extends TestCase
         self::validate($response,$statement);
     }
 
-    function validate($response, $statement){
+    public static function validate($response, $statement){
         if($response){
             print $statement;
         }
